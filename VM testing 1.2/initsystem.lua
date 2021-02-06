@@ -27,12 +27,15 @@ function initAPI()
  
  
  
- System.memory = require("System/memory")
+ require("System/memory/main")
+ 
  --[[
  for i=1,#System.memory do
   print(System.memory[i])
  end
- ]]
+
+ print("System Memory size: "..#System.memory)
+ -- ]]
  
  require("System/loadProgram")
  

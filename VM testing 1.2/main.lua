@@ -28,7 +28,7 @@ function love.update()
    step() 
   end
   ]]
-  step()
+  step() step() step()
  end
 end
 

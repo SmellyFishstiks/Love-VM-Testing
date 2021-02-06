@@ -1,7 +1,7 @@
 
 
 
-local programData="030101030f040901020703000d0304020300010000"
+local programData=""--"030101030f040901020703000d0304020300010000"
 for i=1,#programData/2 do
  System.memory[i]= tonumber( "0x"..string.sub(programData,i*2-1,i*2-1)..string.sub(programData,i*2,i*2) )
 end
